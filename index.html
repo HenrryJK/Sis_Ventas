@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SistemasVentas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-2" style="margin-left: -135px;">
+        <div class="navbar navbar-dark bg-dark" style="height: 620px; width: 250px;">
+          <div class="btn-group-vertical">
+            <div class="btn btn-dark " href="#" style="margin-top: -234px; margin-left: -20px; font-size: 30px;">SISFAC</div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" style="margin-left:140px; margin-top: -65px;" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+           
+            <div type="button" class="btn btn-dark"><i class="fa fa-desktop" aria-hidden="true"></i>Inicio</div>
+            <div class="btn-group" role="group">
+              <div id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>Mantenimiento
+              </div>
+            </div>
+            <div class="btn-group" role="group">
+              <div id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-money" aria-hidden="true"></i>Ventas
+              </div>
+            </div>
+            <div class="btn btn-dark" href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Compras</div>
+            <div class="btn-group" role="group">
+              <div id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>Reportes
+              </div>
+            </div>
+            <div class="btn btn-dark" href="#"><i class="fa fa-database" aria-hidden="true"></i>Backup</div>
+            <div class="btn btn-dark" href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Configuracion</div>
+            <div class="btn btn-dark" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</div>
+            
+          </div>
+
+        </div>
+        <div class="col">
+          
+            
+          <button type="button" style="margin-top: 10px;" class="btn btn-light"><i class="fa fa-user" aria-hidden="true"></i>admin</button>
+          <button type="button" style="margin-top: -75px; margin-left: 785px;" class="btn btn-light"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</button>
+          <div class="col">
+            <p style="margin-top: 10px;">NUEVA COMPRA </p>
+            <hr>
+             <p>FECHA</p>    
+            <input type="text" disabled placeholder="2017-10-02"> 
+            
+            <p>Descripcion</p>
+            <input  style="margin-top: -35px;"  type="text" disabled >
+            <div style="margin-left: 235px; margin-top: -30px;">
+            <button  type="button" class="btn btn-info" style="margin-top: 85px;"> <i class="fa fa-refresh" aria-hidden="true"></i>Nuevo</button>
+            <button type="button" class="btn btn-success" style="margin-top: 85px;"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+            <button type="button" class="btn btn-dark" style="margin-top: 85px;"><i class="fa fa-floppy-o" aria-hidden="true"></i>Registrar</button>
+            </div>
+            <p style="margin-left: 220px; margin-top: -232px;"> Proveedor(es:)</p>
+            <input type="text" style="margin-left: 197px;">
+          
+            <p style="margin-left: 220px;">Presentacion:</p>
+            <input type="text" disabled style="margin-left: 200px;">
+          
+            <p style="margin-left: 420px; margin-top: -140px;">Codigo de Barra:</p>
+            <input type="text"  style="margin-left: 399px;">
+
+            <p style="margin-left: 420px; margin-top: -2px;">Precio:</p>
+            <input type="text" disabled  style="margin-left: 399px;">
+             
+            
+    
+            <div class="card-header" style="margin-left: 640px; margin-top: -140px; width: 310px; background-color: rgb(190, 255, 92);">Tipo de Documento</div>
+            <div class="card-header" style="margin-left: 640px; margin-top: -1px; width: 310px; height: 120px;">
+              
+
+                <select style="width: 250px;" name = "Documento" id="Documento" class="documento">
+                  <option value="a">FACTURA</option>
+                  <input style="margin-left: 20px; width: 100px;" type="text" placeholder="001">
+                  <input style="margin-left: 20px;margin-top: 20px;width: 120px;" type="text" placeholder="0000001">
+                  <div>
+                  <table class="table table-bordered" style="margin-top: 110px;margin-left: -660px;">
+                    <thead>
+                      <tr style="background-color: rgb(199, 235, 146);">
+                        <th scope="col">Item</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Presentacion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Importe</th>
+                        <th scope="col">Eliminar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Gaseosa Inka Cola</td>
+                        <td>LT</td>
+                        <td>40</td>
+                        <td>1.20</td>
+                        <td>48.00</td>
+                        <td><i class="fa fa-minus-square" aria-hidden="true"></i></td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Agua Mineral Benedictino</td>
+                        <td>LT</td>
+                        <td>50</td>
+                        <td>1.20</td>
+                        <td>60.00</td>
+                        <td><i class="fa fa-minus-square" aria-hidden="true"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <table class="table" style="margin-top: -230px;">
+                  <thead>
+                    <tr>
+                      <th scope="col">SUBTOTAL</th>
+                      <th scope="row">108.00</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">IGV:</th>
+                      <th scope="row">19.44</th>
+                    </tr>
+                    <tr>
+                      <th  style="background-color:rgb(202, 238, 147) ;" scope="row">
+                        <h1>TOTAL</h1>
+                      </th>
+                      <th scope="row" style="background-color: rgb(219, 250, 171);">
+                        <h1>127.44</h1>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <th scope="row"></th>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
